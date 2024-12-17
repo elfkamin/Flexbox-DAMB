@@ -1,2 +1,2 @@
 # Flexbox-DAMB
-Trabajo entornos web, Alejandro Arres, Alejandro Company, Daniel Caballero, Amin Mountassir, Ruben Garcia.
+Trabajo lengua de marcas , Alejandro Arres, Alejandro Company, Daniel Caballero, Amin Mountassir, Ruben Garcia.

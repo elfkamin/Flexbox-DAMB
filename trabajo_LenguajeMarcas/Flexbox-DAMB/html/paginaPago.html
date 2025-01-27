@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +8,66 @@
 </head>
 <body>
     <h1>Página de Pago</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Número de Producto</th>
-        <th>Nombre del Producto</th>
-        <th>Cantidad</th>
-        <th>Precio por Producto</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Camiseta Equipo 1</td>
-        <td>2</td>
-        <td>50.00€</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Camiseta Equipo 2</td>
-        <td>1</td>
-        <td>60.00€</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Camiseta Equipo 3</td>
-        <td>1</td>
-        <td>55.00€</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Camiseta Equipo 4</td>
-        <td>1</td>
-        <td>70.00€</td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Número de Producto</th>
+                <th>Nombre del Producto</th>
+                <th>Cantidad</th>
+                <th>Precio por Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Camiseta de Valencia</td>
+                <td>2</td>
+                <td>50.00€</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Camiseta Barcelona</td>
+                <td>1</td>
+                <td>60.00€</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Camiseta de Madrid</td>
+                <td>1</td>
+                <td>55.00€</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Camiseta de España</td>
+                <td>1</td>
+                <td>70.00€</td>
+            </tr>
+        </tbody>
+    </table>
 
-  <div class="total">
-    <p>Total: $235.00</p>
-  </div>
+    <div class="total">
+        <p>Total: 235.00€</p>
+    </div>
 
-  <div class="payment-options">
-    <div class="imgVisa"><img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/visa-removebg-preview.png" alt="Visa" title=""></div>
-    <div class="imgMastercard"><img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/mastercard-removebg-preview.png" alt="Mastercard" title=""></div>
-    <div class="imgPaypal"><img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/paypal2-removebg-preview.png" alt="PayPal" title=""></div>
-    
-    
-    
-  </div>
+    <div class="payment-options">
+        <img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/visa-removebg-preview.png" alt="Visa">
+        <img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/mastercard-removebg-preview.png" alt="Mastercard">
+        <div class="paypal"><img src="/trabajo_LenguajeMarcas/Flexbox-DAMB/img/paypal2-removebg-preview.png" alt="PayPal"></div>
+        
+    </div>
 
-  <div class="payment-form">
-    <h2>Detalles del Pago</h2>
-    <label for="cardNumber">Número de la tarjeta</label>
-    <input type="text" id="cardNumber" placeholder="Ingresa tu número de tarjeta" required>
+    <div class="payment-form">
+        <h2>Detalles del Pago</h2>
+        <label for="cardNumber">Número de la tarjeta</label>
+        <input type="text" id="cardNumber" placeholder="Ingresa tu número de tarjeta" required>
 
-    <label for="expiryDate">Fecha de Vencimiento</label>
-    <input type="text" id="expiryDate" placeholder="MM/AAAA" required>
+        <label for="expiryDate">Fecha de Vencimiento</label>
+        <input type="text" id="expiryDate" placeholder="MM/AAAA" required>
 
-    <label for="cvv">Código de Seguridad (CVV)</label>
-    <input type="text" id="cvv" placeholder="Ingresa el código CVV" required>
+        <label for="cvv">Código de Seguridad (CVV)</label>
+        <input type="text" id="cvv" placeholder="Ingresa el código CVV" required>
 
-    <button type="submit">Finalizar Pago</button>
-  </div>
+        <button type="submit">Finalizar Pago</button>
+    </div>
 </body>
 </html>

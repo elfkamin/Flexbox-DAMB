@@ -5,26 +5,26 @@ body {
     color: #333;
   }
   
-  .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  h2 {
+h2 {
     text-align: center;
     color: #4CAF50;
     margin-bottom: 20px;
   }
 
-  .header {
+.header {
     background: #4CAF50;
     color: white;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+ }
 
   .header .nav a {
     color: white;
@@ -78,4 +78,4 @@ body {
   .blog-post img {
     max-width: 100%;
     border-radius: 8px;
-  }
+  } 

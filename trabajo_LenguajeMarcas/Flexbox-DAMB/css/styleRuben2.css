@@ -60,4 +60,22 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container .link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.form-container .link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.form-container .link a:hover {
+    text-decoration: underline;
+}
+
 

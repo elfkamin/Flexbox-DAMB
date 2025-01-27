@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
   }
   
 .container {
@@ -24,6 +25,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
  }
 
 .header .nav a {

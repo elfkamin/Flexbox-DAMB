@@ -49,6 +49,10 @@ body {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
+    background: linear-gradient(to right, #32cd32, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500;
     
 }
 .precio {
@@ -65,10 +69,22 @@ body {
     font-weight: bold;
     margin-right: 10px;
     font-size: 18px;
+    color: #ffdd57;
 }
-.tala select {
-    padding: 8px;
+
+.tallas-boton {
+    background-color: #abe71f;
+    color: #333;
     font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 5px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.tallas-boton:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
 }

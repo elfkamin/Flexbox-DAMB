@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #004aad, #007bff);
+    background: linear-gradient(135deg, #f8f8f8, #11e209);
     border-radius: 10px;
     overflow: hidden;
 }

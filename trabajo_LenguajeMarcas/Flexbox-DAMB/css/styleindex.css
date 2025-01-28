@@ -244,3 +244,77 @@ button {
         transform: scale(1.1);
     }
 }
+
+/* Dispositivos pequeños (móviles, hasta 600px de ancho) */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-left: 0;
+    }
+
+    header .logo h1 {
+        margin-left: 0;
+        font-size: 40px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner {
+        height: auto;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-bottom select {
+        width: 100%;
+    }
+}
+
+/* Dispositivos medianos (tablets, hasta 900px de ancho) */
+@media only screen and (max-width: 900px) {
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    header .logo h1 {
+        font-size: 50px;
+    }
+
+    .banner {
+        font-size: 1.8rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .newsletter input[type="email"] {
+        width: 80%;
+    }
+}

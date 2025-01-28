@@ -398,3 +398,71 @@ body {
     font-family: "Rubik", sans-serif;
     transition: color 600ms;
 }
+
+@media only screen and (max-width: 768px) {
+    .container::before {
+        width: 200vw; 
+        height: 100vh;
+        right: -50%;
+        transform: none;
+        transition: border-radius 0.5s ease-in-out;
+    }
+
+    /* Modo Iniciar Sesión (Login) */
+    .container.sign-in::before {
+        border-bottom-right-radius: 50vw; /* Solo la esquina inferior derecha */
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0; /* La parte superior se mantiene sin cambios */
+    }
+
+    /* Modo Registrarse (Sign-up) */
+    .container.sign-up::before {
+        border-bottom-left-radius: 50vw; /* Solo la esquina inferior izquierda */
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0; /* La parte superior se mantiene sin cambios */
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container::before {
+        width: 100vw;
+        height: 60vh;
+        right: 0;
+        top: 0;
+        transform: none;
+        transition: border-radius 0.5s ease-in-out;
+    }
+
+    /* Modo Iniciar Sesión (Login) */
+    .container.sign-in::before {
+        border-bottom-right-radius: 50vw; /* Solo la esquina inferior derecha */
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    /* Modo Registrarse (Sign-up) */
+    .container.sign-up::before {
+        border-bottom-left-radius: 50vw; /* Solo la esquina inferior izquierda */
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .container {
+        height: auto;
+        overflow-y: auto;
+        padding-bottom: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .col {
+        width: 100%;
+        position: static;
+        padding: 1rem;
+        background-color: var(--white);
+    }
+}
+

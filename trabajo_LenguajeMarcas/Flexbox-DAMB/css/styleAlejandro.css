@@ -54,7 +54,7 @@ body {
   }
   
   .total p {
-    margin-right: 150px;
+    margin-bottom: 10px;
     color: #4CAF50;
   }
   
@@ -71,7 +71,7 @@ body {
   }
 
   .payment-options .paypal img {
-    padding-top: 20px;
+    padding-top: 5px;
     width: 60px;
     height: 60px;
   }
@@ -125,3 +125,85 @@ body {
   .payment-options img:hover {
     transform: scale(1.1);
   }
+
+  .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.payment-table th, .payment-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.payment-options img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.payment-form {
+    margin-top: 20px;
+}
+
+.payment-form h2 {
+    margin-bottom: 10px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.payment-icon {
+  width: 50px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.paypal-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.visa img {
+  width: 70px;
+  height: 65px;
+}
+.mastercard img {
+  width: 160px;
+    height: 65px;
+}
+

@@ -87,3 +87,19 @@ body {
     background-color: #ffd700;
     transform: scale(1.1);
 }
+.carrito {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.carrito:hover {
+    background-color: #e63900;
+}

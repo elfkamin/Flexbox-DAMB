@@ -125,3 +125,55 @@ body {
   .payment-options img:hover {
     transform: scale(1.1);
   }
+
+  .payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.payment-table th, .payment-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.payment-options img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.payment-form {
+    margin-top: 20px;
+}
+
+.payment-form h2 {
+    margin-bottom: 10px;
+}
+
+.payment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

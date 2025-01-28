@@ -56,9 +56,9 @@ body {
     background-color: #15803d;
 }
 
-/* Sección del banner */
+
 .banner {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,18 +66,17 @@ body {
 
 .banner h1 {
     font-size: 2rem;
-    color: #15803d; /* Verde oscuro */
+    color: #15803d; 
 }
 
 .banner p {
     font-size: 1.2rem;
-    color: #14532d; /* Verde más oscuro */
+    color: #14532d; 
 }
 
-/* Sección Quienes Somos */
 .about-us {
     padding: 2rem 0;
-    background-color: #e7f6eb; /* Verde claro */
+    background-color: #e7f6eb; 
 }
 
 .about-us h2 {

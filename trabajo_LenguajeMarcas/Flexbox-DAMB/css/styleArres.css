@@ -87,19 +87,22 @@ body {
     background-color: #ffd700;
     transform: scale(1.1);
 }
-.carrito {
+.carrito-boton {
     display: inline-block;
-    background-color: #ff4500;
+    background-color: #000000;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.carrito:hover {
-    background-color: #e63900;
+.carrito-boton:hover {
+    background-color: #7e7b7a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }

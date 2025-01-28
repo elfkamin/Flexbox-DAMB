@@ -119,7 +119,30 @@ body {
     transition: transform 0.3s ease;
 }
 
-.producto1:hover, .producto2:hover, .producto3:hover {
+.producto6, .producto4, .producto5 {
+    background-color: #e7f6eb;
+    padding: 1rem;
+    border: 1px solid #c7e4d0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto9, .producto7, .producto8 {
+    background-color: #e7f6eb;
+    padding: 1rem;
+    border: 1px solid #c7e4d0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8, .producto9 {
+    width: 300px; /* Ejemplo de ancho */
+    height: 400px; /* Ejemplo de alto */
+}
+
+.producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover, .producto5:hover, .producto6:hover, .producto7:hover, .producto8:hover, .producto9:hover {
     transform: scale(1.05);
 }
 

@@ -12,12 +12,11 @@ body {
   padding: 0 20px;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
 h2 {
-  text-align: center;
   color: #4CAF50;
   margin-bottom: 20px;
 }
@@ -25,7 +24,7 @@ h2 {
 .header {
   background: #4CAF50;
   color: white;
-  padding: 15px 0;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,21 +40,21 @@ h2 {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+  transition: color 0.3s ease-in-out;
 }
 
 .header .nav a:hover {
   color: #FFC107;
 }
 
-.productos .grid {
+.productos .grid, .Exclusivo .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px 0;
 }
 
-.producto {
-  position: relative; 
+.producto, .blog-post {
   background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -63,74 +62,44 @@ h2 {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
 
-.producto:hover {
+.producto:hover, .blog-post:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.producto img {
+.producto img, .blog-post img {
   max-width: 100%;
   border-radius: 8px;
-  transition: opacity 0.3s ease-in-out; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.producto .btn-detalles, .blog-post .btn-detalles {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .producto .btn-detalles {
   background: #4CAF50;
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
 .producto .btn-detalles:hover {
   background: #45a049;
-  cursor: pointer;
-}
-
-.Exclusivo .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.blog-post {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.blog-post:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.blog-post img {
-  max-width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
 }
 
 .blog-post .btn-detalles {
   background: #5d5c5a;
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
 .blog-post .btn-detalles:hover {
   background: #FF9800;
-  cursor: pointer;
 }
 
 .footer {
@@ -145,7 +114,6 @@ h2 {
   margin: 0;
 }
 
-
 .producto::before {
   content: '';
   position: absolute;
@@ -156,9 +124,9 @@ h2 {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out; 
-  z-index: 1; 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .producto:nth-child(1)::before {
@@ -177,21 +145,20 @@ h2 {
   background-image: url("/trabajo_LenguajeMarcas/Flexbox-DAMB/img/productos/Camiseta-Málaga-Cf-Primera-Equipación-24-25.jpg");
 }
 
-/* Ensuring that the image gets hidden when hovering */
 .producto:hover img {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .producto:hover::before {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .producto .producto-link {
-  display: block; /* Makes the entire image clickable */
+  display: block;
 }
 
 .producto .producto-link img {
-  cursor: pointer; /* Indicates the image is clickable */
+  cursor: pointer;
 }
 
 /*Footer*/

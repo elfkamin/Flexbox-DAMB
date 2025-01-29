@@ -21,8 +21,8 @@ header .logo {
 }
 
 header .logo h1{
-    margin-left: 75px;
-    font-size: 75px;
+    margin-left: 10px;
+    font-size: 42px;
 }
 
 header .logo img {
@@ -51,7 +51,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 header nav ul li a img{
@@ -101,6 +101,7 @@ header .cart img {
 }
 
 .grid .item {
+    padding-bottom: 30px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -255,76 +256,60 @@ button {
     }
 }
 
-/* Dispositivos pequeños (móviles, hasta 600px de ancho) */
-@media only screen and (max-width: 600px) {
+/* Estilos para pantallas grandes (tabletas o portátiles pequeñas) */
+@media (min-width: 769px) and (max-width: 1024px) {
     header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
+        text-align: left;
     }
 
-    header .logo {
-        margin-left: 0;
+    .products .grid, .newproducts .grid, .leagues .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    header .logo h1 {
-        margin-left: 0;
-        font-size: 40px;
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
+    .footer-media {
+        margin-top: 0;
+        text-align: left;
     }
 
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .banner {
-        height: auto;
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    footer .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-bottom select {
-        width: 100%;
+    .footer-media img {
+        width: 50px;
+        height: 50px;
     }
 }
 
-/* Dispositivos medianos (tablets, hasta 900px de ancho) */
-@media only screen and (max-width: 900px) {
-    header nav ul li {
-        margin: 0 15px;
-    }
-
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
     header .logo h1 {
-        font-size: 50px;
+        font-size: 28px;
     }
 
-    .banner {
-        font-size: 1.8rem;
+    header nav ul li a {
+        font-size: 18px;
     }
 
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+    .grid .item img {
+        height: auto;
     }
 
-    .footer-section {
-        text-align: center;
+    .footer-container {
+        padding: 20px;
     }
 
-    .newsletter input[type="email"] {
-        width: 80%;
+    .footer-media img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 0.8rem;
     }
 }

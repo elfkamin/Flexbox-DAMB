@@ -193,3 +193,77 @@ h2 {
 .producto .producto-link img {
   cursor: pointer; /* Indicates the image is clickable */
 }
+
+/*Footer*/
+
+footer {
+  background-color: #4CAF50;
+  color: #fff;
+  margin-top: 80px;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: #ffffff;
+  color: #4CAF50;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #45a049;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.footer-bottom select {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+button {
+  animation: fadeIn 1s ease-in-out;
+}

@@ -101,6 +101,7 @@ header .cart img {
 }
 
 .grid .item {
+    padding-bottom: 30px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;

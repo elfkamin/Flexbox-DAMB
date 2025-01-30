@@ -183,7 +183,16 @@ body {
 
 .pointer {
     cursor: pointer;
+    color: var(--black); /* Cambia el color si es necesario */
+    font-weight: bold;
+    text-decoration: none; /* Quitar el subrayado */
+    transition: color 0.3s ease;
 }
+
+.pointer:hover {
+    color: var(--primary-color); /* Cambia a tu color primario al pasar el ratón */
+}
+
 
 .container.sign-in .form.sign-in,
 .container.sign-in .social-list.sign-in,

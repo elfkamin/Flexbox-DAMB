@@ -91,12 +91,12 @@ header .cart img {
 }
 /* Estilos para el banner */
 .banner2 {
-    background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/penalti.png'); /* Color de fondo verde, igual al del header */
+    background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/cinematic-image-penalty-focused-on-260nw-2469222683.webp'); /* Color de fondo verde, igual al del header */
     background-size: cover; /* Asegura que la imagen cubra toda el área del banner */
     background-position: center; /* Centra la imagen en el banner */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     image-rendering: crisp-edges;
-    color: white; /* Color del texto */
+    color: rgb(155, 155, 155); /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 50px 0;
     padding-bottom: 450px; /* Espaciado superior e inferior */

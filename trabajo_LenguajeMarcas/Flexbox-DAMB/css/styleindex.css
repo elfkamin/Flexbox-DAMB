@@ -95,7 +95,8 @@ header .cart img {
     background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/penalti.png');
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat; ç
+}
 =======
 .logo img{
     width: 100px;
@@ -113,9 +114,11 @@ header .cart img {
     padding: 50px 0;
 <<<<<<< HEAD
     padding-bottom: 450px; 
-=======
     padding-bottom: 250px; /* Espaciado superior e inferior */
 }
+=======
+    
+
 .banner2 h1 {
     color: #333333; /* Gris oscuro */
     font-family: 'Roboto', sans-serif;

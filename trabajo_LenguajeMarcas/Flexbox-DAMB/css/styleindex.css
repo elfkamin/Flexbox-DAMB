@@ -89,24 +89,24 @@ header .cart img {
     padding-top: 1px;
     padding-bottom: 50px;
 }
-/* Estilos para el banner */
+
 .banner {
-    background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/penalti.png'); /* Color de fondo verde, igual al del header */
-    background-size: cover; /* Asegura que la imagen cubra toda el área del banner */
-    background-position: center; /* Centra la imagen en el banner */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/penalti.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     image-rendering: crisp-edges;
-    color: white; /* Color del texto */
-    text-align: center; /* Centra el texto */
+    color: white; 
+    text-align: center; 
     padding: 50px 0;
-    padding-bottom: 450px; /* Espaciado superior e inferior */
+    padding-bottom: 450px; 
 }
 
 .banner h1 {
-    font-size: 60px; /* Tamaño grande para el texto */
-    margin: 0; /* Eliminar márgenes */
-    font-weight: bold; /* Hacer el texto negrita */
-    letter-spacing: 5px; /* Espaciado entre letras */
+    font-size: 60px; 
+    margin: 0; 
+    font-weight: bold; 
+    letter-spacing: 5px; 
 }
 
 .grid{

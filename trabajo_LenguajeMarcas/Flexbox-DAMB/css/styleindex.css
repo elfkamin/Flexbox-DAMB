@@ -88,6 +88,9 @@ header .cart img {
     margin-bottom: 50px;
     padding-top: 1px;
     padding-bottom: 50px;
+    text-shadow: 
+        0px 0px 10px hwb#ffffff;
+        -webkit-text-stroke: 0.5px #000000;
 }
 /* Estilos para el banner */
 .banner2 {
@@ -96,7 +99,7 @@ header .cart img {
     background-position: center; /* Centra la imagen en el banner */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     image-rendering: crisp-edges;
-    color: rgb(155, 155, 155); /* Color del texto */
+    color: white; /* Color del texto */
     text-align: center; /* Centra el texto */
     padding: 50px 0;
     padding-bottom: 450px; /* Espaciado superior e inferior */
@@ -122,12 +125,11 @@ header .cart img {
 
     color: #4CAF50;
     font-size: 40px;
-    color: white;
+    color: #4CAF50;
     text-shadow: 
-      3px 3px 0px #4CAF50,
-      -3px -3px 0px #4CAF50,
-      0px 0px 10px rgba(255, 255, 255, 0.8);
-      -webkit-text-stroke: 0.5px #4CAF50;
+      
+      0px 0px 10px hwb#ffffff;
+      -webkit-text-stroke: 0.5px #000000;
 }
 
 .grid, .products .grid, .leagues .grid, .newproducts .grid {

@@ -2,39 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-
-    background: linear-gradient(
-        to right, 
-        #4CAF50 5%, 
-        transparent 5%
-      ),
-      linear-gradient(
-        to bottom, 
-        #4CAF50 5%, 
-        transparent 5%
-      );
+    background-color: #e0e0e0;
     background-size: 50px 50px;
-    background-color: #ffffff;
-    animation: move-lines 5s linear infinite;
   }
   
-  @keyframes move-lines {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100px 100px;
-    }
-}
+
 
 header {
+    height: 100px;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.banner h1 {
+    color: #333333; /* Gris oscuro */
+    font-family: 'Roboto', sans-serif;
+    margin-top: 150px;
 }
 
 header .logo {
@@ -96,11 +82,40 @@ header .cart img {
 }
 
 
-
-.products, .leagues, .newproducts {
-    padding: 20px;
+.newproducts{
+    background-color: #808080;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+/* Estilos para el banner */
+.banner {
+    background-image: url('/trabajo_LenguajeMarcas/Flexbox-DAMB/img/cinematic-image-penalty-focused-on-260nw-2469222683.webp'); /* Color de fondo verde, igual al del header */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del banner */
+    background-position: center; /* Centra la imagen en el banner */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    image-rendering: crisp-edges;
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 50px 0;
+    padding-bottom: 450px; /* Espaciado superior e inferior */
 }
 
+.banner h1 {
+    font-size: 60px; /* Tamaño grande para el texto */
+    margin: 0; /* Eliminar márgenes */
+    font-weight: bold; /* Hacer el texto negrita */
+    letter-spacing: 5px; /* Espaciado entre letras */
+}
+
+.grid{
+    margin: 30px;
+}
+.products h2{
+    color: #4CAF50;
+    font-size: 40px;
+}
 .products h2, .leagues h2, .newproducts h2 {
     text-align: center;
     margin-bottom: 20px;

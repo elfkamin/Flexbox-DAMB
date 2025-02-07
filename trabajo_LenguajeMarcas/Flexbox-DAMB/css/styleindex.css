@@ -286,60 +286,93 @@ button {
     }
 }
 
-/* Estilos para pantallas grandes (tabletas o portátiles pequeñas) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Pantallas pequeñas: Móviles (max-width: 600px) */
+@media (max-width: 600px) {
     header {
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    .products .grid, .newproducts .grid, .leagues .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer-media {
-        margin-top: 0;
-        text-align: left;
-    }
-
-    .footer-media img {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 480px) {
-    header .logo h1 {
-        font-size: 28px;
-    }
-
-    header nav ul li a {
-        font-size: 18px;
-    }
-
-    .grid .item img {
+        flex-direction: column; /* Coloca los elementos en columna */
         height: auto;
-    }
-
-    .footer-container {
         padding: 20px;
     }
 
+    header .logo h1 {
+        font-size: 28px; /* Reduce el tamaño del título */
+    }
+
+    header nav ul li {
+        margin: 0 10px; /* Reduce el espacio entre elementos */
+        margin-top: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    header nav ul li a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .cart img {
+        width: 50px;
+    }
+
+    .banner2 {
+        padding: 30px 0; /* Reduce el espacio vertical */
+        padding-bottom: 300px; /* Reduce el alto del banner */
+    }
+
+    .banner2 h1 {
+        font-size: 36px; /* Reduce el tamaño del texto */
+        letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+    }
+
+    .grid, .products .grid, .leagues .grid, .newproducts .grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    footer {
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
     .footer-media img {
-        width: 35px;
-        height: 35px;
+        width: 30px; /* Ajusta el tamaño de los iconos */
+        height: 30px;
     }
 
-    .footer-section h3 {
-        font-size: 1rem;
+    .footer-bottom {
+        font-size: 0.7rem; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Pantallas medianas: Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 32px; /* Reduce ligeramente el título */
     }
 
-    .footer-section p, .footer-section a {
-        font-size: 0.8rem;
+    header nav ul li {
+        margin: 0 15px; /* Ajusta el espacio entre elementos */
+        margin-top: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+
+    .banner2 {
+        padding: 40px 0; /* Ajusta el espaciado */
+        padding-bottom: 350px; /* Reduce el alto del banner */
+    }
+
+    .banner2 h1 {
+        font-size: 48px; /* Reduce el tamaño del texto */
+    }
+
+    .grid, .products .grid, .leagues .grid, .newproducts .grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+
+    footer .footer-container {
+        grid-template-columns: 1fr; /* Una sola columna */
     }
 }

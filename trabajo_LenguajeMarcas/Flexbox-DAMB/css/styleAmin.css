@@ -5,53 +5,44 @@ body {
   color: #333;
   background-color: #e0e0e0;
   box-sizing: border-box;
+  text-align: center;
 }
+
 header {
   height: 100px;
   background-color: #4CAF50;
   color: #fff;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-.banner h1 {
-  color: #333333; /* Gris oscuro */
-  font-family: 'Roboto', sans-serif;
-  margin-top: 150px;
+  flex-direction: column;
 }
 
 header .logo {
-  margin-left: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-header .logo h1{
+header .logo h1 {
   margin-left: 10px;
   font-size: 42px;
 }
 
 header .logo img {
   width: 100px;
-  margin-right: 10px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-bottom: 50px;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 header nav ul li {
-  margin: 0 25px;
-  margin-top: 60px;
+  margin: 10px 20px;
 }
 
 header nav ul li a {
@@ -61,31 +52,15 @@ header nav ul li a {
   font-size: 20px;
 }
 
-header nav ul li a img{
-  width: 75px;
-  height: 75px;
-  margin-right: 30px;
-  margin-bottom: 80px;
-}
-
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
 header .cart img {
-  margin-top: 10px;
   width: 60px;
-  margin-right: 35px;
 }
 
-.Exclusivo{
-  margin-bottom: 40px;
-}
 .container {
   max-width: 1200px;
-  margin-top: 50px;
+  margin: 50px auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 h1, h2 {
@@ -94,85 +69,17 @@ h1, h2 {
 
 h2 {
   color: #4CAF50;
-  margin-bottom: 20px;
 }
-
-header {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .logo {
-  margin-left: 25px;
-    display: flex;
-    align-items: center;
-}
-
-header .logo h1{
-  margin-left: 10px;
-  font-size: 42px;
-}
-
-header .logo img {
-  width: 150px;
-  margin-right: 10px;
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-bottom: 50px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-}
-
-header nav ul li {
-  margin: 0 25px;
-  margin-top: 60px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-header nav ul li a img{
-  width: 75px;
-  height: 75px;
-  margin-right: 30px;
-  margin-bottom: 80px;
-}
-
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-header .cart img {
-  margin-top: 10px;
-  width: 100px;
-  margin-right: 35px;
-}
-
 
 .productos .grid, .Exclusivo .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.producto, .blog-post {
+.producto {
   background: white;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -180,50 +87,25 @@ header .cart img {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden;
 }
 
-.producto:hover, .blog-post:hover {
+.producto:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.producto img, .blog-post img {
+.producto img {
   max-width: 100%;
   border-radius: 8px;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.btn-detalles {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.producto .btn-detalles {
-  background: #4CAF50;
-}
-
-.producto .btn-detalles:hover {
-  background: #45a049;
-}
-
-.blog-post .btn-detalles {
-  background: #5d5c5a;
-}
-
-.blog-post .btn-detalles:hover {
-  background: #FF9800;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
   background-color: #4CAF50;
   color: #fff;
   padding: 40px 20px;
+  text-align: center;
 }
 
 .footer-container {
@@ -232,199 +114,33 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  justify-content: center;
 }
 
-.footer-media {
-  margin-top: 30px;
-  margin-left: 150px;
-}
-
-.footer-media img{
+.footer-media img {
   width: 50px;
   height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 
-.footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.footer-section p, .footer-section a {
-  font-size: 0.9rem;
-  color: white;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: white;
-}
-
-.producto::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 1;
-}
-
-.producto:nth-child(1)::before {
-  background-image: url("/trabajo_LenguajeMarcas/Flexbox-DAMB/img/productos/barcelona-hover.jpg");
-}
-
-.producto:nth-child(2)::before {
-  background-image: url("/trabajo_LenguajeMarcas/Flexbox-DAMB/img/productos/brasil-hover.jpg");
-}
-
-.producto:nth-child(3)::before {
-  background-image: url("/trabajo_LenguajeMarcas/Flexbox-DAMB/img/productos/arsenal-hover.jpg");
-}
-
-.producto:nth-child(4)::before {
-  background-image: url("/trabajo_LenguajeMarcas/Flexbox-DAMB/img/productos/Camiseta-Málaga-Cf-Primera-Equipación-24-25.jpg");
-}
-
-.producto:hover img {
-  opacity: 0;
-}
-
-.producto:hover::before {
-  opacity: 1;
-}
-
-/* Media query para tablets */
+/* Media query para tablets y móviles */
 @media (max-width: 1024px) {
-  .container {
-    padding: 0 15px;
-  }
-  
   header {
     flex-direction: column;
     text-align: center;
   }
-  
   header nav ul {
     flex-direction: column;
-    padding: 0;
+    align-items: center;
   }
-  
   header nav ul li {
     margin: 10px 0;
-    padding-right: 375px;
   }
-  
-  .footer-media {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 15px;
-    text-align: center;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  header .logo {
-    justify-content: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  .footer-media {
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-/* Media query para móviles */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  header {
-    flex-direction: column;
-    padding: 15px;
-    align-items: center;
-  }
-
-  header .logo {
-    justify-content: center;
-    text-align: center;
-  }
-
-  header .logo img {
-    width: 100px;
-  }
-
-  header .logo h1 {
-    font-size: 28px;
-  }
-
-  header nav {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  header .cart img {
-    width: 70px;
-  }
-
   .productos .grid, .Exclusivo .grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: center;
   }
-
-  footer {
-    text-align: center;
-  }
-
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-media {
-    margin: 0 auto;
-  }
-
-  .footer-media img {
-    width: 40px;
-    height: 40px;
   }
 }
-

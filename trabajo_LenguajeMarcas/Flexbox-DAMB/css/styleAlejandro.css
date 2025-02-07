@@ -282,6 +282,29 @@ button {
 
 /* Para pantallas medianas (tabletas) */
 @media (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Organiza el footer en dos columnas */
+    gap: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.85rem;
+}
+
+.footer-bottom select {
+    width: 100%;
+    padding: 8px;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
   h1 {
       font-size: 28px;
   }
@@ -341,6 +364,35 @@ button {
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
+  .footer-container {
+    display: block; /* Coloca el footer en bloque */
+    padding: 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    text-align: center; /* Centra el contenido */
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.85rem;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+    text-align: center; /* Centra el contenido */
+    margin-top: 20px;
+}
+
+.footer-bottom select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
   h1 {
       font-size: 24px;
       text-align: left;

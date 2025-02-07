@@ -82,6 +82,32 @@ header .cart img {
 .Exclusivo{
   margin-bottom: 40px;
 }
+
+.producto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 300px; /* Limita el tamaño máximo de la imagen */
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima de la imagen */
+}
+
+.producto a {
+  display: block;
+  text-decoration: none; /* Asegura que no haya subrayado en el enlace */
+}
+
+.producto a:hover img {
+  opacity: 0.8; /* Opcional: Cambia la opacidad de la imagen al pasar el cursor por encima */
+}
+
 .container {
   max-width: 1200px;
   margin-top: 50px;
@@ -104,6 +130,26 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.exclusivo, .productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.exclusivo .container, .productos .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .header .logo {
@@ -298,6 +344,59 @@ footer {
   opacity: 1;
 }
 
+.exclusivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.exclusivo .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exclusivo .grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exclusivo .blog-post {
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.exclusivo .blog-post img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.exclusivo .blog-post h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.exclusivo .blog-post p {
+  margin: 10px 0;
+}
+
+.exclusivo .btn-detalles {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /* Media query para tablets */
 @media (max-width: 1024px) {
   .container {
@@ -427,4 +526,3 @@ footer {
     height: 40px;
   }
 }
-

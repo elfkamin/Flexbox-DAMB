@@ -316,6 +316,7 @@ footer {
   
   header nav ul li {
     margin: 10px 0;
+    padding-right: 375px;
   }
   
   .footer-media {
